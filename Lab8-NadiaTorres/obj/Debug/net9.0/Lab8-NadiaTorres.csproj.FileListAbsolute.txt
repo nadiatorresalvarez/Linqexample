@@ -130,3 +130,4 @@ D:\tecsup\6to\desarrolloAppEmpresariales\Lab8-NadiaTorres\Lab8-NadiaTorres\obj\D
 D:\tecsup\6to\desarrolloAppEmpresariales\Lab8-NadiaTorres\Lab8-NadiaTorres\obj\Debug\net9.0\Lab8-NadiaTorres.pdb
 D:\tecsup\6to\desarrolloAppEmpresariales\Lab8-NadiaTorres\Lab8-NadiaTorres\obj\Debug\net9.0\Lab8-NadiaTorres.genruntimeconfig.cache
 D:\tecsup\6to\desarrolloAppEmpresariales\Lab8-NadiaTorres\Lab8-NadiaTorres\obj\Debug\net9.0\ref\Lab8-NadiaTorres.dll
+D:\tecsup\6to\desarrolloAppEmpresariales\Lab8-NadiaTorres\Lab8-NadiaTorres\obj\Debug\net9.0\Lab8-NadiaTorres.sourcelink.json

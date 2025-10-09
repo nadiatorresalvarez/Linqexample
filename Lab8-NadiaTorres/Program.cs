@@ -18,11 +18,6 @@ builder.Services.AddDbContext<dbContextnLab8>(options =>
 // Registrar UnitOfWork en DI (usa los repositorios internos)
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 
-// Registrar repositorios
-builder.Services.AddScoped<IClientRepository, ClientRepository>();
-builder.Services.AddScoped<IProductRepository, ProductRepository>();
-builder.Services.AddScoped<IOrderRepository, OrderRepository>();
-builder.Services.AddScoped<IOrderDetailRepository, OrderDetailRepository>();
 
 var app = builder.Build();
 
