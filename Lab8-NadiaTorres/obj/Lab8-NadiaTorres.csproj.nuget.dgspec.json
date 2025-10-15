@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\tecsup\\6to\\desarrolloAppEmpresariales\\Lab8-NadiaTorres\\Lab8-NadiaTorres\\Lab8-NadiaTorres.csproj": {}
+    "D:\\CSharp\\Linqexample\\Lab8-NadiaTorres\\Lab8-NadiaTorres.csproj": {}
   },
   "projects": {
-    "D:\\tecsup\\6to\\desarrolloAppEmpresariales\\Lab8-NadiaTorres\\Lab8-NadiaTorres\\Lab8-NadiaTorres.csproj": {
+    "D:\\CSharp\\Linqexample\\Lab8-NadiaTorres\\Lab8-NadiaTorres.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\tecsup\\6to\\desarrolloAppEmpresariales\\Lab8-NadiaTorres\\Lab8-NadiaTorres\\Lab8-NadiaTorres.csproj",
+        "projectUniqueName": "D:\\CSharp\\Linqexample\\Lab8-NadiaTorres\\Lab8-NadiaTorres.csproj",
         "projectName": "Lab8-NadiaTorres",
-        "projectPath": "D:\\tecsup\\6to\\desarrolloAppEmpresariales\\Lab8-NadiaTorres\\Lab8-NadiaTorres\\Lab8-NadiaTorres.csproj",
-        "packagesPath": "C:\\Users\\celes\\.nuget\\packages\\",
-        "outputPath": "D:\\tecsup\\6to\\desarrolloAppEmpresariales\\Lab8-NadiaTorres\\Lab8-NadiaTorres\\obj\\",
+        "projectPath": "D:\\CSharp\\Linqexample\\Lab8-NadiaTorres\\Lab8-NadiaTorres.csproj",
+        "packagesPath": "C:\\Users\\esteb\\.nuget\\packages\\",
+        "outputPath": "D:\\CSharp\\Linqexample\\Lab8-NadiaTorres\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\celes\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\esteb\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net9.0"
@@ -88,7 +88,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
