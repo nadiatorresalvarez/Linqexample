@@ -76,4 +76,25 @@ public class LinqController : ControllerBase
     [HttpGet("ej12")]
     public async Task<IActionResult> Ej12([FromQuery] int productId)
         => Ok(await _uow.OrderDetails.GetClientsWhoBoughtProductAsync(productId));
+    
+    // Semana 9
+    [HttpGet("ej13/clients-orders")]
+    public async Task<IActionResult> Ej13()
+        => Ok(await _uow.Clients.GetClientsWithOrdersAsync());
+    
+    [HttpGet("order/{orderId}/details")]
+    public async Task<IActionResult> GetOrderDetails([FromRoute] int orderId)
+    {
+        var result = await _uow.Orders.GetOrderWithDetailsAsync(orderId);
+        if (result == null) return NotFound();
+        return Ok(result);
+    }
+    
+    [HttpGet("clients/product-count")]
+    public async Task<IActionResult> GetClientsProductCount()
+        => Ok(await _uow.Clients.GetClientsWithProductCountAsync());
+    
+    [HttpGet("clients/sales")]
+    public async Task<IActionResult> GetSalesByClient()
+        => Ok(await _uow.Clients.GetSalesByClientAsync());
 }

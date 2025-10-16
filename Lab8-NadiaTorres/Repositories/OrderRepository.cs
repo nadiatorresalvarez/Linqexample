@@ -1,5 +1,6 @@
 ﻿using Lab8_NadiaTorres.Interfaces;
 using Lab8_NadiaTorres.Models;
+using Lab8_NadiaTorres.Models.DTOS;
 using Microsoft.EntityFrameworkCore;
 
 namespace Lab8_NadiaTorres.Repositories;
@@ -34,5 +35,31 @@ public class OrderRepository : IOrderRepository
                              .Distinct()
                              .ToListAsync();
         return products;
+    }
+    
+    //Include y ThenInclude
+    public async Task<OrderDetailsDTO?> GetOrderWithDetailsAsync(int orderId)
+    {
+        var ordersWithDetails = await _ctx.Orders
+            .Include(order => order.Orderdetails)                 // Cargar detalles de la orden
+            .ThenInclude(orderDetail => orderDetail.Product)      // Cargar productos asociados
+            .AsNoTracking()                                       // Mejor rendimiento en lectura
+            .Where(order => order.OrderId == orderId)             // Filtrar por OrderId
+            .Select(order => new OrderDetailsDTO
+            {
+                OrderId = order.OrderId,
+                OrderDate = order.OrderDate,
+                Products = order.Orderdetails
+                    .Select(od => new ProductDTO
+                    {
+                        ProductName = od.Product.Name,
+                        Quantity = od.Quantity,
+                        Price = od.Product.Price
+                    })
+                    .ToList()
+            })
+            .FirstOrDefaultAsync();
+
+        return ordersWithDetails;
     }
 }
